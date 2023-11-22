@@ -1,0 +1,18 @@
+<!-- <div>
+    <h1>{{ dataPassed }}</h1>
+    <ul>
+      <li *ngFor="let user of users">
+        <p>ID: {{ user.Id }}</p>
+        <p>Name: {{ user.Firstname }} {{ user.Lastname }}</p>
+        <p>Date of Birth: {{ user.DateOfBirth | date }}</p>
+        <p>Phone Number: {{ user.PhoneNumber }}</p>
+        <p>Email: {{ user.Email }}</p>
+        <hr />
+      </li>
+    </ul>
+  </div> -->
+
+  <div *ngFor="let user of users">
+    {{ user.Firstname }} {{ user.Lastname }}
+  </div>
+  <button (click)="passDataToParent()">Pass Data to Parent</button>
